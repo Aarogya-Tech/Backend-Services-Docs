@@ -86,8 +86,8 @@ each feature. This endpoint requires JWT authentication.
 **Parameters:**
 
 - `appId` (path parameter): UUID of the application
-- `deviceSerialNumber` (query parameter, optional): Serial number of the device
-- `companyId` (query parameter, optional): UUID of the company
+- `deviceSerialNumber` (query parameter, optional for other apps apart from AHC): Serial number of the device
+- `companyId` (query parameter, optional (only for admin app required)): UUID of the company
 
 **Authentication:**
 - Requires a valid JWT token in the request header
@@ -104,7 +104,7 @@ each feature.
 - `appId` (path parameter): UUID of the application
 - `userId` (query parameter): UUID of the user
 - `deviceSerialNumber` (query parameter, optional): Serial number of the device
-- `companyId` (query parameter, optional): UUID of the company
+- `companyId` (query parameter, optional (only for admin app required)): UUID of the company
 
 **Response:**
 
